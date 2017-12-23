@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="social.css">
+    <style type="text/css">
+    html,
+    body {
+        background: #1A2E33;
+        /*overflow-x: hidden;*/
+        /*overflow-y: hidden;*/
+    }
+
+
+    .container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .campfire {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: -312px;
+        left: 0;
+    }
+
+    .logs {
+        left: 50%;
+        bottom: 480px;
+        transform: translate(-50%, 0);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .fire {
+        left: 50%;
+        bottom: 575px;
+        width: 400px;
+        transform: translate(-50%, 0);
+
+        position: absolute;
+        z-index: 1;
+    }
+
+    .floor {
+        left: 49%;
+        bottom: 0px;
+        height: 600px;
+        transform: translate(-50%, 0);
+
+        position: absolute;
+        z-index: -2;
+    }
+
+    .yellow-center {
+        left: 50%;
+        bottom: 505px;
+
+        position: absolute;
+        z-index: -2;
+        animation: rot 3s infinite linear;
+    }
+
+    .orange {
+        left: 50%;
+        bottom: 505px;
+        position: absolute;
+        z-index: -2;
+        animation: rotb 3s infinite linear;
+    }
+
+    @keyframes rot {
+        from {
+            transform: translate(-50%, 0) rotate(0deg) translate(-5%, 0) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, 0) rotate(360deg) translate(-5%, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rotb {
+        from {
+            transform: translate(-50%, 0) rotate(360deg) translate(-5%, 0) rotate(-360deg);
+        }
+        to {
+            transform: translate(-50%, 0) rotate(0deg) translate(-5%, 0) rotate(0deg);
+        }
+    }
+
+    .orange-hole {
+        left: 50%;
+        bottom: 398px;
+        position: absolute;
+        z-index: -2;
+        animation: rotb 4s infinite linear;
+    }
+
+    .orange-outer {
+        left: 50%;
+        bottom: 340px;
+        position: absolute;
+        z-index: -2;
+        transform: translate(-50%, 0);
+        /*animation: rot 3s infinite linear;*/
+    }
+
+    .floor-yellow {
+        left: 50%;
+        bottom: 460px;
+        position: absolute;
+        transform: translate(-50%, 0);
+        z-index: 0;
+    }
+
+    .floor-orange {
+        left: 50%;
+        bottom: 450px;
+        transform: translate(-50%, 0);
+
+        position: absolute;
+        z-index: 0;
+    }
+
+    .text {
+        width: 100%;
+        margin-top: 7px;
+    }
+
+    .shadow {
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 50%;
+        bottom: 900px;
+        position: absolute;
+        width: 300px;
+        transform: translate(-50%, 0);
+        z-index: 3;
+        padding: 10px 20px;
+    }
+    /* */
+
+    .bottombox {
+        left: 50%;
+        bottom: 365px;
+        position: absolute;
+        transform: translate(-50%, 0);
+        margin: auto;
+        right: 0;
+        width: 60%;
+        height: 40px;
+        display: block;
+        color: white;
+        text-align: center;
+    }
+
+    .bottombox div {
+        display: inline;
+        margin: 0px 40px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: black;
+    }
+
+    a {
+        color: white;
+    }
+
+     @media (max-width: 1300px) {
+        .bottombox {
+            width: 100%;
+        }
+
+        .bottombox div {
+            margin: 8px 10px;
+            display: inline-block;
+        }
+
+        .campfire {
+            bottom: -263px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .bottombox {
+            bottom: 380px;
+            width: 80%;
+            height: 40px;
+        }
+
+        .bottombox div {
+            display: block;
+            margin: 8px 40px;
+        }
+
+    }
+
+    @media (max-height: 850px) {
+        .shadow {
+            top: 100px;
+            background-color: rgba(0, 0, 0, 0.0);
+            bottom: auto;
+            width: 80%;
+        }
+    }
+
+    .soc {
+        margin-top: 25px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="campfire">
+            <div class="shadow">
+                <img class="text" src="svg/bitcamp-logo-text.svg">
+            </div>
+            <img class="logs" src="svg/bitcamp-logo-icon.svg">
+            <img class="fire" src="svg/fire.gif">
+            <img class="yellow-center" src="svg/yellow-center.svg">
+            <img class="orange-hole" src="svg/orange-hole.svg">
+            <img class="orange-outer" src="svg/orange-outer.svg">
+            <img class="orange" src="svg/orange.svg">
+            <img class="floor-yellow" src="svg/floor-yellow.svg">
+            <img class="floor-orange" src="svg/floor-orange.svg">
+            <img class="floor" src="svg/floor.svg">
+            <div class="bottombox">
+                <div class="contact">
+                    <a href="mailto:hello@bit.camp">hello@bit.camp</a>
+                </div>
+                <div class="date">April 6-8th, 2018 @ The Xfinity Center</div>
+                <div class="sponsorship">
+                    <a href="">sponsorship</a>
+                </div>
+                <ul class="soc">
+                    <li>
+                        <a href="https://www.facebook.com/bitcmp">
+                            <img class="social-media-images" src="icon/fb_icon.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/bitcmp">
+                            <img class="social-media-images" src="icon/twitter_icon.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/bitcamp">
+                            <img class="social-media-images" src="icon/instagram_icon.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://go.snapchat.com/add/bitcamp">
+                            <img class="social-media-images" src="icon/snapchat_icon.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=blue" target="_blank">
+        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
+    </a>
+</body>
+
+</html>

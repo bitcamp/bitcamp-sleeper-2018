@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="711px" height="711px" viewBox="0 0 711 711" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>orange-hole</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.610000014">
+        <g id="Desktop" transform="translate(-157.000000, -113.000000)" fill="#FFAF3F">
+            <path d="M512.5,824 C316.162771,824 157,664.837229 157,468.5 C157,272.162771 316.162771,113 512.5,113 C708.837229,113 868,272.162771 868,468.5 C868,664.837229 708.837229,824 512.5,824 Z M512.5,718 C645.324482,718 753,610.324482 753,477.5 C753,344.675518 645.324482,237 512.5,237 C379.675518,237 272,344.675518 272,477.5 C272,610.324482 379.675518,718 512.5,718 Z" id="orange-hole"></path>
+        </g>
+    </g>
+</svg>
