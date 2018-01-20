@@ -50,14 +50,14 @@
     display:block;
     position: relative;
     z-index: 1;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     line-height: 20px;
     font-size: 11px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    margin-right: 9px;
+    margin-right: 12px;
     color: #ffffff;
     background-color: none;
 }
