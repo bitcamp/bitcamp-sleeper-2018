@@ -14,7 +14,6 @@
         /*overflow-y: hidden;*/
     }
 
-
     .container {
         position: absolute;
         top: 0;
@@ -34,18 +33,10 @@
         left: 0;
     }
 
-    .logs {
-        left: 50%;
-        bottom: 480px;
-        transform: translate(-50%, 0);
-        position: absolute;
-        z-index: 1;
-    }
-
     .fire {
         left: 50%;
-        bottom: 575px;
-        width: 400px;
+        bottom: 550px;
+        width: 30%;
         transform: translate(-50%, 0);
 
         position: absolute;
@@ -60,23 +51,6 @@
 
         position: absolute;
         z-index: -2;
-    }
-
-    .yellow-center {
-        left: 50%;
-        bottom: 505px;
-
-        position: absolute;
-        z-index: -2;
-        animation: rot 3s infinite linear;
-    }
-
-    .orange {
-        left: 50%;
-        bottom: 505px;
-        position: absolute;
-        z-index: -2;
-        animation: rotb 3s infinite linear;
     }
 
     @keyframes rot {
@@ -97,47 +71,12 @@
         }
     }
 
-    .orange-hole {
-        left: 50%;
-        bottom: 398px;
-        position: absolute;
-        z-index: -2;
-        animation: rotb 4s infinite linear;
-    }
-
-    .orange-outer {
-        left: 50%;
-        bottom: 340px;
-        position: absolute;
-        z-index: -2;
-        transform: translate(-50%, 0);
-        /*animation: rot 3s infinite linear;*/
-    }
-
-    .floor-yellow {
-        left: 50%;
-        bottom: 460px;
-        position: absolute;
-        transform: translate(-50%, 0);
-        z-index: 0;
-    }
-
-    .floor-orange {
-        left: 50%;
-        bottom: 450px;
-        transform: translate(-50%, 0);
-
-        position: absolute;
-        z-index: 0;
-    }
-
     .text {
         width: 100%;
         margin-top: 7px;
     }
 
     .shadow {
-        background-color: rgba(0, 0, 0, 0.5);
         left: 50%;
         bottom: 900px;
         position: absolute;
@@ -165,12 +104,29 @@
     .bottombox div {
         display: inline;
         margin: 0px 40px;
-        font-family: 'Source Code Pro', monospace;
+        font-family: Aleo, 'Source Code Pro', monospace;
         font-weight: black;
+    }
+
+    .message {
+        bottom: 480px;
+        left: 50%;
+        right: 0;
+        position: absolute;
+        transform: translate(-50%, 0);
+        margin: auto;
+        display: block;
+        text-align: center;
     }
 
     a {
         color: white;
+    }
+
+    p {
+        color: white;
+        font-family: Aleo, sans-serif;
+        font-size: 20px;
     }
 
      @media (max-width: 1300px) {
@@ -199,7 +155,24 @@
             display: block;
             margin: 8px 40px;
         }
+    }
 
+    @media (max-width: 800px) {
+        .fire {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .fire {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .fire {
+            width: 80%;
+        }
     }
 
     @media (max-height: 850px) {
@@ -207,7 +180,7 @@
             top: 100px;
             background-color: rgba(0, 0, 0, 0.0);
             bottom: auto;
-            width: 80%;
+            /*width: 80%;*/
         }
     }
 
@@ -218,13 +191,17 @@
     #mlh-trust-badge {
         display: block;
         max-width: 150px;
-        min-width: 100px;
+        min-width: 50px;
         position: fixed;
-        right: 50px;
+        right: 5%;
         top: 0;
         width: 15%;
         z-index: 10000;
 
+    }
+
+    .logo {
+        width: 40%;
     }
     </style>
 </head>
@@ -232,18 +209,14 @@
 <body>
     <div class="container">
         <div class="campfire">
-            <div class="shadow">
-                <img class="text" src="svg/bitcamp-logo-text.svg">
+            <img class="text shadow" src="svg/bitcamp-logo-text.svg">
+=            <div class="logo">
+                <img class="fire" src="svg/fire.gif">
             </div>
-            <img class="logs" src="svg/bitcamp-logo-icon.svg">
-            <img class="fire" src="svg/fire.gif">
-            <img class="yellow-center" src="svg/yellow-center.svg">
-            <img class="orange-hole" src="svg/orange-hole.svg">
-            <img class="orange-outer" src="svg/orange-outer.svg">
-            <img class="orange" src="svg/orange.svg">
-            <img class="floor-yellow" src="svg/floor-yellow.svg">
-            <img class="floor-orange" src="svg/floor-orange.svg">
             <img class="floor" src="svg/floor.svg">
+            <div class="message">
+                <p>We're busy gathering wood for our campfire.</p>
+            </div>
             <div class="bottombox">
                 <div class="contact">
                     <a href="mailto:hello@bit.camp">hello@bit.camp</a>
