@@ -11,189 +11,13 @@
     <style type="text/css">
 
     @font-face {
-        font-family: AleoRegular;
-        src: url(fonts/Aleo-Regular.otf);
+        font-family: AvenirLight;
+        src: url(fonts/Avenir-Light.otf);
     }
 
     html,
     body {
         background: #1A2E33;
-        /*overflow-x: hidden;*/
-        /*overflow-y: hidden;*/
-    }
-
-    .container {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-    .campfire {
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-       /* bottom: -312px; */
-        left: 0;
-    }
-
-    .fire {
-        left: 50%;
-        bottom: 510px;
-        width: 30%;
-        transform: translate(-50%, 0);
-
-        position: absolute;
-        z-index: 1;
-    }
-
-    .floor {
-        left: 49%;
-        bottom: 0px;
-        height: 600px;
-        transform: translate(-50%, 0);
-
-        position: absolute;
-        z-index: -2;
-    }
-
-    @keyframes rot {
-        from {
-            transform: translate(-50%, 0) rotate(0deg) translate(-5%, 0) rotate(0deg);
-        }
-        to {
-            transform: translate(-50%, 0) rotate(360deg) translate(-5%, 0) rotate(-360deg);
-        }
-    }
-
-    @keyframes rotb {
-        from {
-            transform: translate(-50%, 0) rotate(360deg) translate(-5%, 0) rotate(-360deg);
-        }
-        to {
-            transform: translate(-50%, 0) rotate(0deg) translate(-5%, 0) rotate(0deg);
-        }
-    }
-
-    .text {
-        width: 100%;
-        margin-top: 7px;
-    }
-
-    .shadow {
-        left: 50%;
-        bottom: 900px;
-        position: absolute;
-        width: 300px;
-        transform: translate(-50%, 0);
-        z-index: 3;
-        padding: 10px 20px;
-    }
-    /* */
-
-    .bottombox {
-        left: 50%;
-        bottom: 365px;
-        position: absolute;
-        transform: translate(-50%, 0);
-        margin: auto;
-        right: 0;
-        width: 60%;
-        height: 40px;
-        display: block;
-        color: white;
-        text-align: center;
-    }
-
-    .bottombox div {
-        display: inline;
-        margin: 0px 40px;
-        font-family: AleoRegular, 'Source Code Pro', monospace;
-        font-weight: black;
-    }
-
-    .message {
-        bottom: 430px;
-        left: 50%;
-        right: 0;
-        position: absolute;
-        transform: translate(-50%, 0);
-        margin: auto;
-        display: block;
-        text-align: center;
-    }
-
-    a {
-        color: white;
-    }
-
-    p {
-        color: white;
-        font-family: AleoRegular, sans-serif;
-        font-size: 18px;
-    }
-
-     @media (max-width: 1300px) {
-        .bottombox {
-            width: 100%;
-        }
-
-        .bottombox div {
-            margin: 8px 10px;
-            display: inline-block;
-        }
-
-        .campfire {
-            bottom: -263px;
-        }
-    }
-
-    @media (max-width: 1100px) {
-        .bottombox {
-            bottom: 380px;
-            width: 80%;
-            height: 40px;
-        }
-
-        .bottombox div {
-            display: block;
-            margin: 8px 40px;
-        }
-    }
-
-    @media (max-width: 800px) {
-        .fire {
-            width: 60%;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .fire {
-            width: 70%;
-        }
-    }
-
-    @media (max-width: 400px) {
-        .fire {
-            width: 80%;
-        }
-    }
-
-    @media (max-height: 850px) {
-        .shadow {
-            top: 100px;
-            background-color: rgba(0, 0, 0, 0.0);
-            bottom: auto;
-            /*width: 80%;*/
-        }
-    }
-
-    .soc {
-        margin-top: 25px;
     }
 
     #mlh-trust-badge {
@@ -201,67 +25,108 @@
         max-width: 150px;
         min-width: 50px;
         position: fixed;
-        right: 5%;
+        right: 3%;
         top: 0;
         width: 15%;
         z-index: 10000;
-
     }
 
-    .logo {
-        width: 40%;
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 10vh;
     }
+
+    .logo-div {
+        text-align: center;
+    }
+
+    .text {
+        display: block;
+        margin: 0 auto; 
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .fire {
+        display: block;
+        margin: 0 auto; 
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .soc {
+        padding-top: 30px;
+    }
+
+    a {
+        color: white;
+        font-family: AvenirLight, Aleo, sans-serif;
+        font-size: 22px;
+        padding: 3px;
+    }
+
+    p {
+        color: white;
+        font-family: AvenirLight, Aleo, sans-serif;
+        font-size: 22px;
+        padding: 3px;
+    }
+
+    .bottomboxline {
+        padding: 4px;
+    }
+
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="campfire">
-            <img class="text shadow" src="svg/bitcamp-logo-text.svg">
-            <div class="logo">
-                <img class="fire" src="svg/bitcamp-logo.gif">
-            </div>
-            <img class="floor" src="svg/floor.svg">
-            <div class="message">
-                <p>We're busy gathering wood for our campfire. Registration opens in early February!</p>
-            </div>
-            <div class="bottombox">
-                <div class="contact">
-                    <a href="mailto:hello@bit.camp">hello@bit.camp</a>
-                </div>
-                <div class="date">April 6-8th, 2018 @ The Xfinity Center</div>
-                <div class="sponsorship">
-                    <a href="">sponsorship</a>
-                </div>
-                <ul class="soc">
-                    <li>
-                        <a href="https://www.facebook.com/bitcmp">
-                            <img class="social-media-images" src="icon/fb_icon.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/bitcmp">
-                            <img class="social-media-images" src="icon/twitter_icon.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/bitcamp">
-                            <img class="social-media-images" src="icon/instagram_icon.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://go.snapchat.com/add/bitcamp">
-                            <img class="social-media-images" src="icon/snapchat_icon.svg">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class = "logo-div">
+        <img class="text" src="svg/bitcamp-logo-text.svg">
         </div>
+        <div class="logo-div">
+            <img class="fire" src="svg/fire.gif">
+        </div>
+        <div class="logo-div">
+            <p>We're busy gathering wood for our campfire. Registration opens in early February!</p>
+        </div>
+        <div class="logo-div">
+            <div class="bottomboxline">
+                <a href="mailto:hello@bit.camp">hello@bit.camp</a>
+            </div>
+            <div class="bottomboxline">
+                <a>April 6-8th, 2018 @ The Xfinity Center</a>
+            </div>
+            <div class="bottomboxline">
+                <a href="http://bit.camp/sponsorship.pdf">sponsorship</a>
+            </div>
+            <ul class="soc">
+                <li>
+                    <a href="https://www.facebook.com/bitcmp">
+                        <img class="social-media-images" src="icon/fb_icon.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/bitcmp">
+                        <img class="social-media-images" src="icon/twitter_icon.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/bitcamp">
+                        <img class="social-media-images" src="icon/instagram_icon.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://go.snapchat.com/add/bitcamp">
+                        <img class="social-media-images" src="icon/snapchat_icon.svg">
+                    </a>
+                </li>
+            </ul>
+         </div>
+        <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     </div>
     </div>
-    <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=red" target="_blank">
-        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
-    </a>
 </body>
 
 </html>
